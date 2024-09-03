@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+
+<head>
+	<!-- 854行改頭貼 -->
+	<!-- 功能寫在908行  <div class="page-inner"></div>裡面 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="UTF-8">
+	<title>Team2專業醫美</title>
+	<meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
+	<link rel="icon" href="imgs/number-2.png" type="image/x-icon" />
+
+	<!-- Fonts and icons -->
+	<!-- 這邊是我的fontawesome Kit -->
+	<script src="https://kit.fontawesome.com/47b671abbd.js" crossorigin="anonymous"></script>
+	<script src="assets/js/plugin/webfont/webfont.min.js"></script>
+	<script>
+		WebFont.load({
+			google: { families: ["Public Sans:300,400,500,600,700"] },
+			custom: {
+				families: [
+					"Font Awesome 5 Solid",
+					"Font Awesome 5 Regular",
+					"Font Awesome 5 Brands",
+					"simple-line-icons",
+				],
+				urls: ["assets/css/fonts.min.css"],
+			},
+			active: function () {
+				sessionStorage.fonts = true;
+			},
+		});
+	</script>
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/css/plugins.min.css" />
+	<link rel="stylesheet" href="assets/css/kaiadmin.min.css" />
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link rel="stylesheet" href="assets/css/demo.css" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- 功能列  42 - 517行-->
+		<!-- Sidebar -->
+		<div class="sidebar" data-background-color="dark">
+			<div class="sidebar-logo">
+				<!-- Logo Header -->
+				<div class="logo-header" data-background-color="dark">
+					<a href="Team2index.html" class="logo"> <!-- 原本的logo -->
+						<!-- src="assets/img/kaiadmin/logo_light.svg" -->
+						<img src="imgs/number-2.png" alt="navbar brand" class="navbar-brand" height="30" />
+						<h3 style="color: white; margin-left: 10px; margin-top: 5px">
+							Team 2</h3>
+					</a>
+					<div class="nav-toggle">
+						<button class="btn btn-toggle toggle-sidebar">
+							<i class="gg-menu-right"></i>
+						</button>
+						<button class="btn btn-toggle sidenav-toggler">
+							<i class="gg-menu-left"></i>
+						</button>
+					</div>
+					<button class="topbar-toggler more">
+						<i class="gg-more-vertical-alt"></i>
+					</button>
+				</div>
+				<!-- End Logo Header -->
+			</div>
+			<div class="sidebar-wrapper scrollbar scrollbar-inner">
+				<div class="sidebar-content">
+					<ul class="nav nav-secondary">
+						<li class="nav-section"><span class="sidebar-mini-icon">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+							<h4 class="text-section">功能列</h4>
+						</li>
+						<!-- 這邊開始下面是我們的功能 -->
+
+						<!-- 排班 -->
+						<li class="nav-item">
+							<!-- 這個href 跟 下面collapse的id一樣，用來摺疊小功能列，bootstrap的功能 --> <!-- Function i 可以自己改名，下面id記得改 -->
+							<a data-bs-toggle="collapse" href="#function1"> <!-- i這行可以自己換成想要的iccn -->
+								<i class="fa-solid fa-hippo"></i>
+								<p>假單</p> <span class="caret"></span>
+							</a>
+							<div class="collapse" id="function1">
+								<ul class="nav nav-collapse">
+									<li>
+										<!-- href裡面寫超連結到功能網頁 --> <a href="/clinc/leaverecord.html"> <span
+												class="sub-item">假單總覽</span>
+										</a>
+										<!-- </li>
+									<li><a href=""> <span class="sub-item">功能2</span>
+									</a></li>
+									<li><a href=""> <span class="sub-item">功能3</span>
+									</a></li> -->
+								</ul>
+							</div>
+						</li>
+						<!-- 員工資訊 -->
+						<li class="nav-item">
+							<!-- 這個href 跟 下面collapse的id一樣，用來摺疊小功能列，bootstrap的功能 --> <!-- Function i 可以自己改名，下面id記得改 -->
+							<a data-bs-toggle="collapse" href="#function2"> <!-- i這行可以自己換成想要的iccn -->
+								<i class="fa-solid fa-user"></i>
+								<p>員工資訊</p> <span class="caret"></span>
+							</a>
+							<div class="collapse" id="function2">
+								<ul class="nav nav-collapse">
+									<li>
+										<!-- href裡面寫超連結到功能網頁 --> <a href="/clinc/emp.html"> <span class="sub-item">員工總覽</span>
+										</a>
+									</li>
+									<!-- <li><a href=""> <span class="sub-item">功能2</span>
+									</a></li>
+									<li><a href=""> <span class="sub-item">功能3</span>
+									</a></li> -->
+								</ul>
+							</div>
+						</li>
+						<!-- 門診預約 -->
+						<li class="nav-item">
+							<!-- 這個href 跟 下面collapse的id一樣，用來摺疊小功能列，bootstrap的功能 --> <!-- Function i 可以自己改名，下面id記得改 -->
+							<a data-bs-toggle="collapse" href="#function3"> <!-- i這行可以自己換成想要的iccn -->
+								<i class="fa-solid fa-phone"></i>
+								<p>門診預約</p> <span class="caret"></span>
+							</a>
+							<div class="collapse" id="function3">
+								<ul class="nav nav-collapse">
+									<li>
+										<!-- href裡面寫超連結到功能網頁 --> <a href="/clinc/M001.html"> <span
+												class="sub-item">門診預約</span>
+										</a>
+									</li>
+									<!-- <li><a href=""> <span class="sub-item">功能2</span>
+									</a></li>
+									<li><a href=""> <span class="sub-item">功能3</span>
+									</a></li> -->
+								</ul>
+							</div>
+						</li>
+						<!-- 手術預約 -->
+						<li class="nav-item">
+							<!-- 這個href 跟 下面collapse的id一樣，用來摺疊小功能列，bootstrap的功能 --> <!-- Function i 可以自己改名，下面id記得改 -->
+							<a data-bs-toggle="collapse" href="#function4"> <!-- i這行可以自己換成想要的iccn -->
+								<i class="fa-solid fa-syringe"></i>
+								<p>手術預約</p> <span class="caret"></span>
+							</a>
+							<div class="collapse" id="function4">
+								<ul class="nav nav-collapse">
+									<li>
+										<!-- href裡面寫超連結到功能網頁 --> <a href="/clinc/OpApp2.html"> <span
+												class="sub-item">手術預約</span>
+										</a>
+									</li>
+									<!-- <li><a href=""> <span class="sub-item">功能2</span>
+									</a></li>
+									<li><a href=""> <span class="sub-item">功能3</span>
+									</a></li> -->
+								</ul>
+							</div>
+						</li>
+						<!-- 訂單 -->
+						<li class="nav-item">
+							<!-- 這個href 跟 下面collapse的id一樣，用來摺疊小功能列，bootstrap的功能 --> <!-- Function i 可以自己改名，下面id記得改 -->
+							<a data-bs-toggle="collapse" href="#function5"> <!-- i這行可以自己換成想要的iccn -->
+								<i class="fa-regular fa-note-sticky"></i>
+								<p>訂單</p> <span class="caret"></span>
+							</a>
+							<div class="collapse" id="function5">
+								<ul class="nav nav-collapse">
+									<li>
+										<!-- href裡面寫超連結到功能網頁 --> <a href="/clinc/OrderView.html"> <span
+												class="sub-item">訂單總覽</span>
+										</a>
+									</li>
+									<!-- <li><a href="OrderAdd.html"> <span class="sub-item">新增訂單</span>
+									</a></li> -->
+									<!-- <li><a href=""> <span class="sub-item">功能3</span>
+									</a></li> -->
+								</ul>
+							</div>
+						</li>
+						<!-- 庫存管理 -->
+						<li class="nav-item">
+							<!-- 這個href 跟 下面collapse的id一樣，用來摺疊小功能列，bootstrap的功能 --> <!-- Function i 可以自己改名，下面id記得改 -->
+							<a data-bs-toggle="collapse" href="#function6"> <!-- i這行可以自己換成想要的iccn -->
+								<i class="fas fa-layer-group"></i>
+								<p>庫存管理</p> <span class="caret"></span>
+							</a>
+							<div class="collapse" id="function6">
+								<ul class="nav nav-collapse">
+									<li>
+										<!-- href裡面寫超連結到功能網頁 --> <a href="./test2.html"> <span
+												class="sub-item">庫存總覽</span>
+										</a>
+									</li>
+									<!-- <li><a href=""> <span class="sub-item">功能2</span>
+									</a></li>
+									<li><a href=""> <span class="sub-item">功能3</span>
+									</a></li> -->
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- End Sidebar -->
+		<!-- 功能列結束 -->
+		<!-- 主頁面 -->
+		<div class="main-panel">
+			<!-- 上面的功能列 -->
+			<div class="main-header">
+				<div class="main-header-logo">
+					<!-- Logo Header -->
+					<div class="logo-header" data-background-color="dark">
+						<a href="index.html" class="logo"> <img src="assets/img/kaiadmin/logo_light.svg"
+								alt="navbar brand" class="navbar-brand" height="20" />
+						</a>
+						<div class="nav-toggle">
+							<button class="btn btn-toggle toggle-sidebar">
+								<i class="gg-menu-right"></i>
+							</button>
+							<button class="btn btn-toggle sidenav-toggler">
+								<i class="gg-menu-left"></i>
+							</button>
+						</div>
+						<button class="topbar-toggler more">
+							<i class="gg-more-vertical-alt"></i>
+						</button>
+					</div>
+					<!-- End Logo Header -->
+				</div>
+				<!-- Navbar Header -->
+				<nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
+					<div class="container-fluid">
+						<nav
+							class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<button type="submit" class="btn btn-search pe-1">
+										<i class="fa fa-search search-icon"></i>
+									</button>
+								</div>
+								<input type="text" placeholder="Search ..." class="form-control" />
+							</div>
+						</nav>
+
+						<ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+							<li class="nav-item topbar-icon dropdown hidden-caret d-flex d-lg-none">
+								<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+									aria-expanded="false" aria-haspopup="true"> <i class="fa fa-search"></i>
+								</a>
+								<ul class="dropdown-menu dropdown-search animated fadeIn">
+									<form class="navbar-left navbar-form nav-search">
+										<div class="input-group">
+											<input type="text" placeholder="Search ..." class="form-control" />
+										</div>
+									</form>
+								</ul>
+							</li>
+							<li class="nav-item topbar-icon dropdown hidden-caret"><a class="nav-link dropdown-toggle"
+									href="#" id="messageDropdown" role="button" data-bs-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false"> <i class="fa fa-envelope"></i>
+								</a>
+								<ul class="dropdown-menu messages-notif-box animated fadeIn"
+									aria-labelledby="messageDropdown">
+									<li>
+										<div class="dropdown-title d-flex justify-content-between align-items-center">
+											Messages <a href="#" class="small">Mark all as read</a>
+										</div>
+									</li>
+									<li>
+										<div class="message-notif-scroll scrollbar-outer">
+											<div class="notif-center">
+												<a href="#">
+													<div class="notif-img">
+														<img src="assets/img/jm_denis.jpg" alt="Img Profile" />
+													</div>
+													<div class="notif-content">
+														<span class="subject">Jimmy Denis</span> <span class="block">
+															How are you ? </span> <span class="time">5
+															minutes ago</span>
+													</div>
+												</a> <a href="#">
+													<div class="notif-img">
+														<img src="assets/img/chadengle.jpg" alt="Img Profile" />
+													</div>
+													<div class="notif-content">
+														<span class="subject">Chad</span> <span class="block">
+															Ok, Thanks ! </span> <span class="time">12 minutes
+															ago</span>
+													</div>
+												</a> <a href="#">
+													<div class="notif-img">
+														<img src="assets/img/mlane.jpg" alt="Img Profile" />
+													</div>
+													<div class="notif-content">
+														<span class="subject">Jhon Doe</span> <span class="block">
+															Ready for the meeting today... </span> <span class="time">12
+															minutes ago</span>
+													</div>
+												</a> <a href="#">
+													<div class="notif-img">
+														<img src="assets/img/talha.jpg" alt="Img Profile" />
+													</div>
+													<div class="notif-content">
+														<span class="subject">Talha</span> <span class="block">
+															Hi, Apa Kabar ? </span> <span class="time">17 minutes
+															ago</span>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li><a class="see-all" href="javascript:void(0);">See
+											all messages<i class="fa fa-angle-right"></i>
+										</a></li>
+								</ul>
+							</li>
+							<li class="nav-item topbar-icon dropdown hidden-caret"><a class="nav-link dropdown-toggle"
+									href="#" id="notifDropdown" role="button" data-bs-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bell"></i> <span
+										class="notification">4</span>
+								</a>
+								<ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+									<li>
+										<div class="dropdown-title">You have 4 new notification
+										</div>
+									</li>
+									<li>
+										<div class="notif-scroll scrollbar-outer">
+											<div class="notif-center">
+												<a href="#">
+													<div class="notif-icon notif-primary">
+														<i class="fa fa-user-plus"></i>
+													</div>
+													<div class="notif-content">
+														<span class="block"> New user registered </span> <span
+															class="time">5 minutes ago</span>
+													</div>
+												</a> <a href="#">
+													<div class="notif-icon notif-success">
+														<i class="fa fa-comment"></i>
+													</div>
+													<div class="notif-content">
+														<span class="block"> Rahmad commented on Admin </span> <span
+															class="time">12 minutes ago</span>
+													</div>
+												</a> <a href="#">
+													<div class="notif-img">
+														<img src="assets/img/profile2.jpg" alt="Img Profile" />
+													</div>
+													<div class="notif-content">
+														<span class="block"> Reza send messages to you </span> <span
+															class="time">12 minutes ago</span>
+													</div>
+												</a> <a href="#">
+													<div class="notif-icon notif-danger">
+														<i class="fa fa-heart"></i>
+													</div>
+													<div class="notif-content">
+														<span class="block"> Farrah liked Admin </span> <span
+															class="time">17 minutes ago</span>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li><a class="see-all" href="javascript:void(0);">See
+											all notifications<i class="fa fa-angle-right"></i>
+										</a></li>
+								</ul>
+							</li>
+							<li class="nav-item topbar-icon dropdown hidden-caret"><a class="nav-link"
+									data-bs-toggle="dropdown" href="#" aria-expanded="false"> <i
+										class="fas fa-layer-group"></i>
+								</a>
+								<div class="dropdown-menu quick-actions animated fadeIn">
+									<div class="quick-actions-header">
+										<span class="title mb-1">Quick Actions</span> <span
+											class="subtitle op-7">Shortcuts</span>
+									</div>
+									<div class="quick-actions-scroll scrollbar-outer">
+										<div class="quick-actions-items">
+											<div class="row m-0">
+												<a class="col-6 col-md-4 p-0" href="#">
+													<div class="quick-actions-item">
+														<div class="avatar-item bg-danger rounded-circle">
+															<i class="far fa-calendar-alt"></i>
+														</div>
+														<span class="text">Calendar</span>
+													</div>
+												</a> <a class="col-6 col-md-4 p-0" href="#">
+													<div class="quick-actions-item">
+														<div class="avatar-item bg-warning rounded-circle">
+															<i class="fas fa-map"></i>
+														</div>
+														<span class="text">Maps</span>
+													</div>
+												</a> <a class="col-6 col-md-4 p-0" href="#">
+													<div class="quick-actions-item">
+														<div class="avatar-item bg-info rounded-circle">
+															<i class="fas fa-file-excel"></i>
+														</div>
+														<span class="text">Reports</span>
+													</div>
+												</a> <a class="col-6 col-md-4 p-0" href="#">
+													<div class="quick-actions-item">
+														<div class="avatar-item bg-success rounded-circle">
+															<i class="fas fa-envelope"></i>
+														</div>
+														<span class="text">Emails</span>
+													</div>
+												</a> <a class="col-6 col-md-4 p-0" href="#">
+													<div class="quick-actions-item">
+														<div class="avatar-item bg-primary rounded-circle">
+															<i class="fas fa-file-invoice-dollar"></i>
+														</div>
+														<span class="text">Invoice</span>
+													</div>
+												</a> <a class="col-6 col-md-4 p-0" href="#">
+													<div class="quick-actions-item">
+														<div class="avatar-item bg-secondary rounded-circle">
+															<i class="fas fa-credit-card"></i>
+														</div>
+														<span class="text">Payments</span>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li class="nav-item topbar-user dropdown hidden-caret"><a
+									class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#"
+									aria-expanded="false">
+									<div class="avatar-sm">
+										<!-- 改頭貼 -->
+										<img src="imgs/MR_SQL.png" alt="..." class="avatar-img rounded-circle" />
+									</div> <span class="profile-username"> <span class="op-7">Hi,</span>
+										<span class="fw-bold">MR_SQL</span>
+									</span>
+								</a>
+								<ul class="dropdown-menu dropdown-user animated fadeIn">
+									<div class="dropdown-user-scroll scrollbar-outer">
+										<li>
+											<div class="user-box">
+												<div class="avatar-lg">
+													<img src="assets/img/profile.jpg" alt="image profile"
+														class="avatar-img rounded" />
+												</div>
+												<div class="u-text">
+													<h4>Hizrian</h4>
+													<p class="text-muted">hello@example.com</p>
+													<a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View
+														Profile</a>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="dropdown-divider"></div> <a class="dropdown-item" href="#">My
+												Profile</a> <a class="dropdown-item" href="#">My
+												Balance</a> <a class="dropdown-item" href="#">Inbox</a>
+											<div class="dropdown-divider"></div> <a class="dropdown-item"
+												href="#">Account Setting</a>
+											<div class="dropdown-divider"></div> <a class="dropdown-item"
+												href="#">Logout</a>
+										</li>
+									</div>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<!-- End Navbar -->
+			</div>
+			<!-- 主要功能寫的地方 -->
+			<div class="container">
+				<div class="page-inner">
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="card">
+								<div class="card-header">
+									<div class="d-flex align-items-center">
+										<!-- 下面寫表格名字👇 -->
+										<!-- 下面寫表格名字👇 -->
+										<!-- 下面寫表格名字👇 -->
+										<h4 class="card-title">員工總覽</h4>
+										<!-- 下面寫新增按鈕的功能，我是寫超連結👇 -->
+										<!-- 下面寫新增按鈕的功能，我是寫超連結👇 -->
+										<!-- 下面寫新增按鈕的功能，我是寫超連結👇 -->
+										<!-- 不需要的話就把button整個註解掉 -->
+										<button class="btn btn-primary btn-round ms-auto" data-bs-toggle="modal"
+											data-bs-target="#addRowModal">
+											<i class="fa fa-plus"></i> Add Row
+										</button>
+									</div>
+								</div>
+								<div class="card-body">
+									<!-- Modal 新增員工資料-->
+									<div class="modal fade" id="addRowModal" tabindex="-1" role="dialog"
+										aria-hidden="true">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+												<div class="modal-header border-0">
+													<h5 class="modal-title">
+														<span class="fw-mediumbold"></span>新增員工資料 <span
+															class="fw-light">
+													</h5>
+													<button type="button" class="close" data-dismiss="modal"
+														aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<form>
+														<div class="row">
+															<div class="col-sm-12">
+
+																<div class="form-group">
+																	<label>員工編號</label>
+																	<input id="addempId" type="text"
+																		class="form-control" required>
+
+																	<label>姓名</label>
+																	<input id="addempName" type="text"
+																		class="form-control" required />
+																</div>
+
+																<div class="form-group">
+																	<label>職稱</label>
+																	<select name="title"
+																		class="form-select form-control" id="addtitle"
+																		required>
+																		<option>系統管理員</option>
+																		<option>護理師</option>
+																		<option>倉管人員</option>
+																		<option>護理長</option>
+																		<option>倉管組長</option>
+																		<option>諮詢師</option>
+																		<option>醫生</option>
+																		<option>店經理</option>
+																		<option>老闆</option>
+																	</select>
+																</div>
+
+																<div class="form-group">
+																	<label>職等</label>
+																	<select name="titlelevel"
+																		class="form-select form-control"
+																		id="addTitleLevel" required>
+																		<option>1</option>
+																		<option>2</option>
+																		<option>3</option>
+																		<option>4</option>
+																		<option>5</option>
+																		<option>6</option>
+																		<option>M1</option>
+																		<option>M2</option>
+																		<option>M3</option>
+																		<option>M4</option>
+																		<option>M5</option>
+																		<option>none</option>
+																	</select>
+																</div>
+
+																<div class="form-group">
+																	<label>電話</label>
+																	<input id="addempTel" type="tel"
+																		class="form-control" maxlength="10" required />
+																</div>
+
+																<div class="form-group">
+																	<label>性別</label>
+																	<label for="empGender">員工性別 :</label>
+																	<select id="addempGender"
+																		class="form-select form-control"
+																		name="empGender" required>
+																		<option>男</option>
+																		<option>女</option>
+																	</select>
+																</div>
+
+																<div class="form-group">
+																	<label>專業</label>
+																	<input id="addSpec" type="text"
+																		class="form-control" />
+																</div>
+
+																<div class="form-group">
+																	<label>email</label>
+																	<input id="addempEmail" type="text"
+																		class="form-control" required />
+																</div>
+
+																<div class="form-group">
+																	<label>密碼</label>
+																	<input id="addPassWord" type="text"
+																		class="form-control" required />
+																</div>
+
+
+															</div>
+														</div>
+													</form>
+												</div>
+												<div class="modal-footer border-0">
+													<button type="button" id="addRowButton" class="btn btn-primary">
+														Add</button>
+													<button type="button" id="closeAddRow" class="btn btn-danger"
+														data-dismiss="modal">
+														Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 修改員工資料 -->
+
+									<div class="table-responsive">
+										<table id="add-row" class="display table table-striped table-hover">
+											<thead>
+												<!-- 這邊寫你總共有啥欄位下 down-->
+												<tr>
+													<th>員工編號</th>
+													<th>姓名</th>
+													<th>職稱</th>
+													<th>職等</th>
+													<!-- <th>電話</th> -->
+													<th>性別</th>
+													<th>專業</th>
+													<!-- <th>email</th> -->
+													<!-- <th>密碼</th> -->
+													<th style="width: 10%">Action</th>
+												</tr>
+												<!-- 這邊寫你總共有啥欄位上 up -->
+											</thead>
+											<!-- <tfoot>
+												<tr>
+													<th>Name</th>
+													<th>Position</th>
+													<th>Office</th>
+													<th>Action</th>
+												</tr>
+											</tfoot> -->
+											<tbody>
+												<!-- 幫大家留一個tr，方便觀察 -->
+												<tr>
+
+													<!-- 👇下面這個td是按鈕，可以先不用做 -->
+													<td>
+														<div class="form-button-action">
+															<button type="button" data-bs-toggle="tooltip" title=""
+																class="btn btn-link btn-primary btn-lg"
+																data-original-title="Edit Task" id="edit">
+																<i class="fa fa-edit"></i>
+															</button>
+															<button type="button" data-bs-toggle="tooltip" title=""
+																class="btn btn-link btn-danger"
+																data-original-title="Remove" id="delete">
+																<i class="fa fa-times"></i>
+															</button>
+														</div>
+													</td>
+													<!-- ☝️上面這個td是按鈕，可以先不用做 -->
+												</tr>
+												<!-- 功能寫這邊下 down-->
+												<!-- 把你表格的tr塞進來下 down -->
+
+
+												<!-- 把你表格的tr塞進來上 up -->
+												<!-- 功能寫這邊上 up-->
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="upEmp" class="modal" tabindex="-1">
+						<div class="modal-dialog modal-dialog-scrollable">
+							<div class="modal-content">
+								<div class="modal-header" style="background-color: lightblue;">
+									<h5 class="modal-title">修改員工資料</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<form id="upEmpform" action="/emp/empUpdate" method="post">
+
+										<div class="form-group">
+											<label for="emp_id">員工編號 :</label>
+											<input id="upempid" name="emp_id" type="text" class="form-control"
+												placeholder="請輸入員工編號" readonly />
+										</div>
+
+										<div class="form-group">
+											<label for="empname">員工姓名 :</label>
+											<input id="upempname" name="empname" type="text" class="form-control"
+												placeholder="請輸入員工姓名" required />
+										</div>
+
+										<div class="form-group"> <!--可以用下拉選單-->
+											<label for="title">職稱 :</label>
+											<select name="title" class="form-select form-control" id="uptitle"
+												required="required">
+												<option>系統管理員</option>
+												<option>護理師</option>
+												<option>倉管人員</option>
+												<option>護理長</option>
+												<option>倉管組長</option>
+												<option>諮詢師</option>
+												<option>醫生</option>
+												<option>店經理</option>
+												<option>老闆</option>
+											</select>
+										</div>
+
+										<div class="form-group"> <!--可以用下拉選單-->
+											<label for="titleLevel">職等 :</label>
+											<select name="titlelevel" class="form-select form-control" id="uptitleLevel"
+												required="required">
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>6</option>
+												<option>M1</option>
+												<option>M2</option>
+												<option>M3</option>
+												<option>M4</option>
+												<option>M5</option>
+												<option>none</option>
+											</select>
+										</div>
+
+										<div class="form-group">
+											<label for="upempTel">電話 :</label>
+											<input id="upempTel" name="emp_tel" type="tel" class="form-control"
+												maxlength="10" placeholder="請輸入員工電話" required />
+										</div>
+
+										<div class="form-group">
+											<label for="empGender">員工性別 :</label>
+											<select id="upempGender" class="form-select form-control" name="emp_gender"
+												required>
+												<option>男</option>
+												<option>女</option>
+											</select>
+										</div>
+
+										<div class="form-group">
+											<label for="upspec">專業 :</label>
+											<input id="upspec" name="spec" type="text" class="form-control"
+												placeholder="請輸入員工專業" />
+										</div>
+
+										<div class="form-group">
+											<label for="empEmail">員工信箱 :</label>
+											<input id="upempEmail" name="emp_email" type="email" class="form-control"
+												placeholder="請輸入員工信箱" required />
+										</div>
+
+										<div class="form-group">
+											<label for="uppassWord">密碼 :</label>
+											<input id="uppassWord" name="password" type="text" class="form-control"
+												placeholder="請輸入員工密碼" maxlength="12" required />
+										</div>
+
+										<div class="card-action" style="display: flex; justify-content: center;">
+											<button type="submit" id="upConfirmBtn" class="btn btn-success"
+												style="margin-right: 20px;">修改員工資料</button>
+											<button type="button" id="upCancelBtn" class="btn btn-danger">取消修改</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--   Core JS Files   -->
+					<script src="assets/js/core/jquery-3.7.1.min.js"></script>
+					<script src="assets/js/core/popper.min.js"></script>
+					<script src="assets/js/core/bootstrap.min.js"></script>
+
+					<!-- jQuery Scrollbar -->
+					<script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+					<!-- Chart JS -->
+					<script src="assets/js/plugin/chart.js/chart.min.js"></script>
+
+					<!-- jQuery Sparkline -->
+					<script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+					<!-- Chart Circle -->
+					<script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+
+					<!-- Datatables -->
+					<script src="assets/js/plugin/datatables/datatables.min.js"></script>
+
+					<!-- Bootstrap Notify -->
+					<script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+					<!-- jQuery Vector Maps -->
+					<script src="assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+					<script src="assets/js/plugin/jsvectormap/world.js"></script>
+
+					<!-- Sweet Alert -->
+					<script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+					<!-- Kaiadmin JS -->
+					<script src="assets/js/kaiadmin.min.js"></script>
+
+					<script>
+						$(document).ready(function () {
+							let filterRow = `
+								<tr>
+									<th><input type="text" id="filter-empid" placeholder="Search ID"></th>
+									<th><input type="text" id="filter-empname" placeholder="Search Name"></th>
+									<th><input type="text" id="filter-title" placeholder="Search Title"></th>
+									<th><input type="text" id="filter-titlelevel" placeholder="Search Title Level"></th>
+									<th><input type="text" id="filter-empgender" placeholder="Search Gender"></th>
+									<th><input type="text" id="filter-spec" placeholder="Search Spec"></th>
+									
+								</tr>`;
+							$("#add-row thead").append(filterRow);
+
+							// 搜尋功能
+							$("#filter-empid, #filter-empname, #filter-title, #filter-titlelevel,  #filter-empgender, #filter-spec").on("keyup", function () {
+								var input = $(this).val().toLowerCase();
+								var index = $(this).parent().index();
+								$("#add-row tbody tr").filter(function () {
+									$(this).toggle($(this).find("td").eq(index).text().toLowerCase().indexOf(input) > -1);
+								});
+							});
+							//讀取資料庫資料
+							//function GetEmployees(){
+							$.ajax({
+								url: "empJNDI",
+								type: "GET",
+								data: {},
+								cache: false,
+								dataType: "json",
+								success: function (data) {
+									let html = "";
+									$.each(data, function (index, emp) {
+										html += "<tr>";
+										html += `<td> ${emp.empid} </td>`;
+										html += `<td> ${emp.empname} </td>`;
+										html += `<td> ${emp.title} </td>`;
+										html += `<td> ${emp.titleLevel} </td>`;
+										// html += `<td> ${emp.empTel} </td>`;
+										html += `<td> ${emp.empGender} </td>`;
+										html += `<td> ${emp.spec}</td>`;
+										// html += `<td> ${emp.empEmail}</td>`;
+										// html += `<td> ${emp.passWord}</td>`;
+										html += `<td><div class="form-button-action">
+															<button type="submit" data-bs-toggle="tooltip" title=""
+																class="btn btn-link btn-primary btn-lg edit-btn"
+																data-original-title="Edit Task" 
+																data-empid="${emp.empid}"
+																data-empname="${emp.empname}"
+																data-title="${emp.title}"
+																data-titlelevel="${emp.titleLevel}"
+																data-emptel="${emp.empTel}"
+																data-empgender="${emp.empGender}"
+																data-spec="${emp.spec}"
+																data-empemail="${emp.empEmail}"
+																data-password="${emp.passWord}">
+																<i class="fa-solid fa-file-pen"></i>
+															</button>
+															<button type="button" data-bs-toggle="tooltip" title=""
+																class="btn btn-link btn-danger"
+																data-original-title="Remove" id="delete" data-empid="${emp.empid}">
+																<i class="fa-solid fa-user-slash"></i>
+															</button>
+														</div></td>`;
+
+										html += "</tr>";
+									});
+									$("#add-row tbody").html(html);
+								},
+							})
+							//}
+
+
+							// 刪除
+							$("#add-row tbody").on("click", "#delete", function () {
+								let empid = $(this).data("empid");
+								let row = $(this).closest("tr");
+
+								// 確認是否要刪除
+								let confirmDelete = confirm("你確定要刪除這筆資料嗎？");
+
+								if (confirmDelete) {
+									$.ajax({
+										url: "empDelete",
+										type: "POST",
+										data: {
+											emp_id: empid
+										},
+										success: function (response) {
+											if (response.success) {
+												row.remove();
+												alert(response.message);
+											} else {
+												alert("刪除失敗: " + response.message);
+											}
+										}
+									});
+								} else {
+									// 如果使用者點選取消，就不執行任何操作
+									alert("刪除已取消");
+								}
+							});
+
+
+							//新增員工
+							$('#addRowButton').click(function (e) {
+								e.preventDefault(); // 阻止表單默認提交
+								let formData = {
+									emp_id: $('#addempId').val(),
+									empname: $('#addempName').val(),
+									title: $('#addtitle').val(), // 修正選擇器
+									titlelevel: $('#addTitleLevel').val(),
+									emp_tel: $('#addempTel').val(),
+									emp_gender: $('#addempGender').val(),
+									spec: $('#addSpec').val(),
+									emp_email: $('#addempEmail').val(),
+									password: $('#addPassWord').val()
+								};
+								$.ajax({
+									url: "empinsert",
+									type: "POST",
+									data: formData,
+									success: function (response) {
+										if (response.success) {
+											$('#addRowModal').modal('hide');
+											alert("新增員工成功!");
+											loadEmployees(); // 調用函數重新加載員工數據
+										} else {
+											alert("新增員工失敗: " + response.message);
+										}
+									},
+									error: function (xhr, status, error) {
+										alert("發生錯誤: " + error);
+									}
+								});
+							});
+							$('#closeAddRow').click(function () {
+								$('#addRowModal').modal('hide');
+							})
+
+							//修改
+							$("#add-row tbody").on("click", ".edit-btn", function () {
+
+								let upempid = $(this).data("empid");
+								// console.log("Employee ID: " + upempid);
+								let upempname = $(this).data("empname");
+								let uptitle = $(this).data("title");
+								let uptitleLevel = $(this).data("titlelevel");
+								let upempTel = $(this).data("emptel");
+								let upempGender = $(this).data("empgender");
+								let upspec = $(this).data("spec");
+								let upempEmail = $(this).data("empemail");
+								let uppassWord = $(this).data("password");
+
+
+
+								//給預設值
+								$("#upEmp").modal("show");
+								$("#upempid ").val(upempid);
+								$("#upempname").val(upempname);
+								$("#uptitle").val(uptitle);
+								$("#uptitleLevel").val(uptitleLevel);
+								$("#upempTel").val(upempTel);
+								$("#upempGender").val(upempGender);
+								$("#upspec").val(upspec);
+								$("#upempEmail").val(upempEmail);
+								$("#uppassWord").val(uppassWord);
+
+								//提交修改表單            
+								$("#upEmpform").off("submit");
+								// 然後綁定新的 submit 事件處理程序
+								$("#upEmpform").off("submit").on("submit", function (e) {
+									e.preventDefault();
+
+									if (confirm("確定要修改嗎？")) {
+										$.ajax({
+											url: "empUpdate",
+											type: "POST",
+											data: $(this).serialize(),
+											dataType: "json",
+											success: function (response) {
+												if (response.status === "success") {
+													alert("修改成功");
+													$("#upEmp").modal("hide");
+													loadEmployees(); // 重新讀取員工資料
+												} else {
+													alert("修改失敗: " + response.message);
+												}
+											},
+											error: function (xhr, status, error) {
+												alert("發生錯誤: " + error);
+											}
+										});
+									}
+								});
+
+								$("#upCancelBtn").on("click", function () {
+									$("#upEmp").modal("hide");
+								});
+							});
+							//讀取完員工檔案功能
+							function loadEmployees() {
+								$.ajax({
+									url: "empJNDI",
+									type: "GET",
+									dataType: "json",
+									success: function (data) {
+										let html = "";
+										$.each(data, function (index, emp) {
+											html += "<tr>";
+											html += `<td> ${emp.empid} </td>`;
+											html += `<td> ${emp.empname} </td>`;
+											html += `<td> ${emp.title} </td>`;
+											html += `<td> ${emp.titleLevel} </td>`;
+											// html += `<td> ${emp.empTel} </td>`;
+											html += `<td> ${emp.empGender} </td>`;
+											html += `<td> ${emp.spec}</td>`;
+											// html += `<td> ${emp.empEmail}</td>`;
+											// html += `<td> ${emp.passWord}</td>`;
+											html += `<td><div class="form-button-action">
+															<button type="button" data-bs-toggle="tooltip" title=""
+																class="btn btn-link btn-primary btn-lg edit-btn"
+																data-original-title="Edit Task" 
+																data-empid="${emp.empid}"
+																data-empname="${emp.empname}"
+																data-title="${emp.title}"
+																data-titlelevel="${emp.titleLevel}"
+																data-emptel="${emp.empTel}"
+																data-empgender="${emp.empGender}"
+																data-spec="${emp.spec}"
+																data-empemail="${emp.empEmail}"
+																data-password="${emp.passWord}">
+																<i class="fa-solid fa-file-pen"></i>
+															</button>
+															<button type="button" data-bs-toggle="tooltip" title=""
+																class="btn btn-link btn-danger"
+																data-original-title="Remove" id="delete" data-empid="${emp.empid}">
+																<i class="fa-solid fa-user-slash"></i>
+															</button>
+														</div></td>`;
+
+											html += "</tr>";
+										});
+										$("#add-row tbody").html(html);
+									}
+
+								});
+							}
+						})
+
+
+
+					</script>
+
+
+</body>
+
+</html>

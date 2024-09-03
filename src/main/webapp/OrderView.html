@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+  <head>
+    <!-- 854行改頭貼 -->
+    <!-- 表格在908行 -->
+    <!--652表格-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Team2專業醫美</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <link rel="icon" href="imgs/number-2.png" type="image/x-icon" />
+
+    <!-- Fonts and icons -->
+    <!-- 這邊是我的fontawesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/47b671abbd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Public Sans:300,400,500,600,700"],
+        },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["assets/css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="assets/css/kaiadmin.min.css" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="assets/css/demo.css" />
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- 酷酷的彈跳窗 -->
+    <!-- jquery-confirm -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- 功能列  42 - 517行-->
+      <!-- Sidebar -->
+      <div class="sidebar" data-background-color="dark">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="dark">
+            <a href="Team2index.html" class="logo">
+              <!-- 原本的logo -->
+              <!-- src="assets/img/kaiadmin/logo_light.svg" -->
+              <img
+                src="imgs/number-2.png"
+                alt="navbar brand"
+                class="navbar-brand"
+                height="30"
+              />
+              <h3 style="color: white; margin-left: 10px; margin-top: 5px">
+                Team 2
+              </h3>
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-secondary">
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">功能列</h4>
+              </li>
+              <!-- 這邊開始下面是我們的功能 -->
+
+              <!-- 排班 -->
+              <li class="nav-item">
+                <!-- 這個href 跟 下面collapse的id一樣，用來摺疊小功能列，bootstrap的功能 -->
+                <!-- Function i 可以自己改名，下面id記得改 -->
+                <a data-bs-toggle="collapse" href="#function1">
+                  <!-- i這行可以自己換成想要的iccn -->
+                  <i class="fa-solid fa-hippo"></i>
+                  <p>假單</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="function1">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <!-- href裡面寫超連結到功能網頁 -->
+                      <a href="/clinc/leaverecord.html">
+                        <span class="sub-item">假單總覽</span>
+                      </a>
+                      <!-- </li>
+                    <li><a href=""> <span class="sub-item">功能2</span>
+                    </a></li>
+                    <li><a href=""> <span class="sub-item">功能3</span>
+                    </a></li> -->
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- 員工資訊 -->
+              <li class="nav-item">
+                <!-- 這個href 跟 下面collapse的id一樣，用來摺疊小功能列，bootstrap的功能 -->
+                <!-- Function i 可以自己改名，下面id記得改 -->
+                <a data-bs-toggle="collapse" href="#function2">
+                  <!-- i這行可以自己換成想要的iccn -->
+                  <i class="fa-solid fa-user"></i>
+                  <p>員工資訊</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="function2">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <!-- href裡面寫超連結到功能網頁 -->
+                      <a href="/clinc/emp.html">
+                        <span class="sub-item">員工總覽</span>
+                      </a>
+                    </li>
+                    <!-- <li><a href=""> <span class="sub-item">功能2</span>
+                    </a></li>
+                    <li><a href=""> <span class="sub-item">功能3</span>
+                    </a></li> -->
+                  </ul>
+                </div>
+              </li>
+              <!-- 門診預約 -->
+              <li class="nav-item">
+                <!-- 這個href 跟 下面collapse的id一樣，用來摺疊小功能列，bootstrap的功能 -->
+                <!-- Function i 可以自己改名，下面id記得改 -->
+                <a data-bs-toggle="collapse" href="#function3">
+                  <!-- i這行可以自己換成想要的iccn -->
+                  <i class="fa-solid fa-phone"></i>
+                  <p>門診預約</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="function3">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <!-- href裡面寫超連結到功能網頁 -->
+                      <a href="/clinc/M001.html">
+                        <span class="sub-item">門診預約</span>
+                      </a>
+                    </li>
+                    <!-- <li><a href=""> <span class="sub-item">功能2</span>
+                    </a></li>
+                    <li><a href=""> <span class="sub-item">功能3</span>
+                    </a></li> -->
+                  </ul>
+                </div>
+              </li>
+              <!-- 手術預約 -->
+              <li class="nav-item">
+                <!-- 這個href 跟 下面collapse的id一樣，用來摺疊小功能列，bootstrap的功能 -->
+                <!-- Function i 可以自己改名，下面id記得改 -->
+                <a data-bs-toggle="collapse" href="#function4">
+                  <!-- i這行可以自己換成想要的iccn -->
+                  <i class="fa-solid fa-syringe"></i>
+                  <p>手術預約</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="function4">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <!-- href裡面寫超連結到功能網頁 -->
+                      <a href="/clinc/OpApp2.html">
+                        <span class="sub-item">手術預約</span>
+                      </a>
+                    </li>
+                    <!-- <li><a href=""> <span class="sub-item">功能2</span>
+                    </a></li>
+                    <li><a href=""> <span class="sub-item">功能3</span>
+                    </a></li> -->
+                  </ul>
+                </div>
+              </li>
+              <!-- 訂單 -->
+              <li class="nav-item">
+                <!-- 這個href 跟 下面collapse的id一樣，用來摺疊小功能列，bootstrap的功能 -->
+                <!-- Function i 可以自己改名，下面id記得改 -->
+                <a data-bs-toggle="collapse" href="#function5">
+                  <!-- i這行可以自己換成想要的iccn -->
+                  <i class="fa-regular fa-note-sticky"></i>
+                  <p>訂單</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="function5">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <!-- href裡面寫超連結到功能網頁 -->
+                      <a href="./OrderView.html">
+                        <span class="sub-item">訂單總覽</span>
+                      </a>
+                    </li>
+                    <!-- <li>
+                      <a href="OrderAdd.html">
+                        <span class="sub-item">新增訂單</span>
+                      </a>
+                    </li> -->
+                    <!-- <li><a href=""> <span class="sub-item">功能3</span>
+                    </a></li> -->
+                  </ul>
+                </div>
+              </li>
+              <!-- 庫存管理 -->
+              <li class="nav-item">
+                <!-- 這個href 跟 下面collapse的id一樣，用來摺疊小功能列，bootstrap的功能 -->
+                <!-- Function i 可以自己改名，下面id記得改 -->
+                <a data-bs-toggle="collapse" href="#function6">
+                  <!-- i這行可以自己換成想要的iccn -->
+                  <i class="fas fa-layer-group"></i>
+                  <p>庫存管理</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="function6">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <!-- href裡面寫超連結到功能網頁 -->
+                      <a href="./test2.html">
+                        <span class="sub-item">庫存總覽</span>
+                      </a>
+                    </li>
+                    <!-- <li><a href=""> <span class="sub-item">功能2</span>
+                    </a></li>
+                    <li><a href=""> <span class="sub-item">功能3</span>
+                    </a></li> -->
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+      <!-- 功能列結束 -->
+      <!-- 主頁面 -->
+      <div class="main-panel">
+        <!-- 上面的功能列 -->
+        <div class="main-header">
+          <div class="main-header-logo">
+            <!-- Logo Header -->
+            <div class="logo-header" data-background-color="dark">
+              <a href="index.html" class="logo">
+                <img
+                  src="assets/img/kaiadmin/logo_light.svg"
+                  alt="navbar brand"
+                  class="navbar-brand"
+                  height="20"
+                />
+              </a>
+              <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                  <i class="gg-menu-right"></i>
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                  <i class="gg-menu-left"></i>
+                </button>
+              </div>
+              <button class="topbar-toggler more">
+                <i class="gg-more-vertical-alt"></i>
+              </button>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <!-- Navbar Header -->
+          <nav
+            class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom"
+          >
+            <div class="container-fluid">
+              <nav
+                class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex"
+              >
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-search pe-1">
+                      <i class="fa fa-search search-icon"></i>
+                    </button>
+                  </div>
+                  <input
+                    id="AASerach"
+                    type="text"
+                    placeholder="Search ..."
+                    class="form-control"
+                  />
+                </div>
+              </nav>
+
+              <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+                <li
+                  class="nav-item topbar-icon dropdown hidden-caret d-flex d-lg-none"
+                >
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                  >
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-search animated fadeIn">
+                    <form class="navbar-left navbar-form nav-search">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          placeholder="Search ..."
+                          class="form-control"
+                        />
+                      </div>
+                    </form>
+                  </ul>
+                </li>
+                <li class="nav-item topbar-icon dropdown hidden-caret">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="messageDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu messages-notif-box animated fadeIn"
+                    aria-labelledby="messageDropdown"
+                  >
+                    <li>
+                      <div
+                        class="dropdown-title d-flex justify-content-between align-items-center"
+                      >
+                        Messages <a href="#" class="small">Mark all as read</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="message-notif-scroll scrollbar-outer">
+                        <div class="notif-center">
+                          <a href="#">
+                            <div class="notif-img">
+                              <img
+                                src="assets/img/jm_denis.jpg"
+                                alt="Img Profile"
+                              />
+                            </div>
+                            <div class="notif-content">
+                              <span class="subject">Jimmy Denis</span>
+                              <span class="block"> How are you ? </span>
+                              <span class="time">5 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-img">
+                              <img
+                                src="assets/img/chadengle.jpg"
+                                alt="Img Profile"
+                              />
+                            </div>
+                            <div class="notif-content">
+                              <span class="subject">Chad</span>
+                              <span class="block"> Ok, Thanks ! </span>
+                              <span class="time">12 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-img">
+                              <img
+                                src="assets/img/mlane.jpg"
+                                alt="Img Profile"
+                              />
+                            </div>
+                            <div class="notif-content">
+                              <span class="subject">Jhon Doe</span>
+                              <span class="block">
+                                Ready for the meeting today...
+                              </span>
+                              <span class="time">12 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-img">
+                              <img
+                                src="assets/img/talha.jpg"
+                                alt="Img Profile"
+                              />
+                            </div>
+                            <div class="notif-content">
+                              <span class="subject">Talha</span>
+                              <span class="block"> Hi, Apa Kabar ? </span>
+                              <span class="time">17 minutes ago</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="see-all" href="javascript:void(0);"
+                        >See all messages<i class="fa fa-angle-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item topbar-icon dropdown hidden-caret">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="notifDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i class="fa fa-bell"></i>
+                    <span class="notification">4</span>
+                  </a>
+                  <ul
+                    class="dropdown-menu notif-box animated fadeIn"
+                    aria-labelledby="notifDropdown"
+                  >
+                    <li>
+                      <div class="dropdown-title">
+                        You have 4 new notification
+                      </div>
+                    </li>
+                    <li>
+                      <div class="notif-scroll scrollbar-outer">
+                        <div class="notif-center">
+                          <a href="#">
+                            <div class="notif-icon notif-primary">
+                              <i class="fa fa-user-plus"></i>
+                            </div>
+                            <div class="notif-content">
+                              <span class="block"> New user registered </span>
+                              <span class="time">5 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-icon notif-success">
+                              <i class="fa fa-comment"></i>
+                            </div>
+                            <div class="notif-content">
+                              <span class="block">
+                                Rahmad commented on Admin
+                              </span>
+                              <span class="time">12 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-img">
+                              <img
+                                src="assets/img/profile2.jpg"
+                                alt="Img Profile"
+                              />
+                            </div>
+                            <div class="notif-content">
+                              <span class="block">
+                                Reza send messages to you
+                              </span>
+                              <span class="time">12 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-icon notif-danger">
+                              <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="notif-content">
+                              <span class="block"> Farrah liked Admin </span>
+                              <span class="time">17 minutes ago</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="see-all" href="javascript:void(0);"
+                        >See all notifications<i class="fa fa-angle-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item topbar-icon dropdown hidden-caret">
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-layer-group"></i>
+                  </a>
+                  <div class="dropdown-menu quick-actions animated fadeIn">
+                    <div class="quick-actions-header">
+                      <span class="title mb-1">Quick Actions</span>
+                      <span class="subtitle op-7">Shortcuts</span>
+                    </div>
+                    <div class="quick-actions-scroll scrollbar-outer">
+                      <div class="quick-actions-items">
+                        <div class="row m-0">
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div class="avatar-item bg-danger rounded-circle">
+                                <i class="far fa-calendar-alt"></i>
+                              </div>
+                              <span class="text">Calendar</span>
+                            </div>
+                          </a>
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div
+                                class="avatar-item bg-warning rounded-circle"
+                              >
+                                <i class="fas fa-map"></i>
+                              </div>
+                              <span class="text">Maps</span>
+                            </div>
+                          </a>
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div class="avatar-item bg-info rounded-circle">
+                                <i class="fas fa-file-excel"></i>
+                              </div>
+                              <span class="text">Reports</span>
+                            </div>
+                          </a>
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div
+                                class="avatar-item bg-success rounded-circle"
+                              >
+                                <i class="fas fa-envelope"></i>
+                              </div>
+                              <span class="text">Emails</span>
+                            </div>
+                          </a>
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div
+                                class="avatar-item bg-primary rounded-circle"
+                              >
+                                <i class="fas fa-file-invoice-dollar"></i>
+                              </div>
+                              <span class="text">Invoice</span>
+                            </div>
+                          </a>
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div
+                                class="avatar-item bg-secondary rounded-circle"
+                              >
+                                <i class="fas fa-credit-card"></i>
+                              </div>
+                              <span class="text">Payments</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="nav-item topbar-user dropdown hidden-caret">
+                  <a
+                    class="dropdown-toggle profile-pic"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    aria-expanded="false"
+                  >
+                    <div class="avatar-sm">
+                      <!-- 改頭貼 -->
+                      <img
+                        src="imgs/MR_SQL.png"
+                        alt="..."
+                        class="avatar-img rounded-circle"
+                      />
+                    </div>
+                    <span class="profile-username">
+                      <span class="op-7">Hi,</span>
+                      <span class="fw-bold">MR_SQL</span>
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-user animated fadeIn">
+                    <div class="dropdown-user-scroll scrollbar-outer">
+                      <li>
+                        <div class="user-box">
+                          <div class="avatar-lg">
+                            <img
+                              src="assets/img/profile.jpg"
+                              alt="image profile"
+                              class="avatar-img rounded"
+                            />
+                          </div>
+                          <div class="u-text">
+                            <h4>Hizrian</h4>
+                            <p class="text-muted">hello@example.com</p>
+                            <a
+                              href="profile.html"
+                              class="btn btn-xs btn-secondary btn-sm"
+                              >View Profile</a
+                            >
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">My Balance</a>
+                        <a class="dropdown-item" href="#">Inbox</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Account Setting</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- End Navbar -->
+        </div>
+        <!-- 主要功能寫的地方 -->
+        <div class="container" id="container">
+          <div class="page-inner">
+            <!-- 隱藏的表單 -->
+            <form
+              id="deleteForm"
+              method="POST"
+              action="/clinc/OrderDelete"
+              style="display: none"
+            >
+              <input name="ordernum" id="deleteInput" />
+            </form>
+            <!-- 下面是表格 -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div
+                    class="card-header"
+                    style="background-color: rgb(240, 219, 222)"
+                  >
+                    <div class="d-flex align-items-center">
+                      <h4 class="card-title">訂單</h4>
+                      <!--JQuery的FILTER-->
+                      <label style="margin: 0 auto"
+                        >搜尋:
+                        <input
+                          style="border: 2px solid gray"
+                          type="text"
+                          id="Serach"
+                          placeholder="請輸入搜尋"
+                      /></label>
+                      <button
+                        id="addBtn"
+                        class="btn btn-primary btn-round ms-auto"
+                      >
+                        <i class="fa-solid fa-square-plus"></i> 新增訂單
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <!--這裏面放我的 Modal -->
+                    <!-- Modal1新增訂單 -->
+                    <div id="addOrderModal" class="modal" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div
+                            class="modal-header"
+                            style="background-color: lightgreen"
+                          >
+                            <h5 class="modal-title">新增訂單</h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <form
+                              id="OrderForm"
+                              action="/clinc/OrderAdd"
+                              method="post"
+                            >
+                              <div class="form-group">
+                                <label for="orderNumber">訂單編號 :</label>
+                                <input
+                                  id="OrderNumber"
+                                  name="orderNumber"
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="請輸入訂單編號"
+                                  readonly
+                                />
+                              </div>
+
+                              <div class="form-group">
+                                <label for="patientName">患者名稱 :</label>
+                                <input
+                                  id="OrderName"
+                                  name="patientName"
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="請輸入患者姓名"
+                                  required
+                                />
+                              </div>
+
+                              <div class="form-group">
+                                <label for="patientAge">患者年齡 :</label>
+                                <input
+                                  id="OrderAge"
+                                  name="patientAge"
+                                  type="number"
+                                  class="form-control"
+                                  min="1"
+                                  max="100"
+                                  placeholder="請輸入患者年齡"
+                                  required
+                                />
+                              </div>
+
+                              <div class="form-group">
+                                <label for="patientGender">患者性別 :</label>
+                                <select
+                                  id="OrderGender"
+                                  class="form-select form-control"
+                                  name="patientGender"
+                                  required
+                                >
+                                  <option value="1">男</option>
+                                  <option value="2">女</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="upOrderPhone">患者電話 :</label>
+                                <input
+                                  id="OrderPhone"
+                                  name="patientPhone"
+                                  type="tel"
+                                  class="form-control"
+                                  maxlength="10"
+                                  placeholder="請輸入患者電話"
+                                />
+                              </div>
+
+                              <div class="form-group">
+                                <label for="patientAddress">患者地址 :</label>
+                                <input
+                                  id="OrderAddress"
+                                  name="patientAddress"
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="請輸入患者地址"
+                                />
+                              </div>
+
+                              <div class="form-group">
+                                <label for="patientEmail">患者信箱 :</label>
+                                <input
+                                  id="OrderEmail"
+                                  name="patientEmail"
+                                  type="email"
+                                  class="form-control"
+                                  placeholder="請輸入患者信箱"
+                                />
+                              </div>
+
+                              <div class="form-group">
+                                <label for="treatmentContent">療程內容 :</label>
+                                <select
+                                  name="treatmentItem"
+                                  class="form-select form-control"
+                                  id="OrdertreatmentContent"
+                                  required="required"
+                                >
+                                  <option>雷射除毛</option>
+                                  <option>玻尿酸</option>
+                                  <option>水飛梭</option>
+                                  <option>音波拉提</option>
+                                  <option>皮秒雷射</option>
+                                  <option>雙眼皮手術</option>
+                                  <option>隆鼻</option>
+                                  <option>抽脂</option>
+                                  <option>隆乳</option>
+                                  <option>痘疤，除斑治療</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="treatmentStatus">療程狀況 :</label>
+                                <select
+                                  name="treatmentStatus"
+                                  class="form-select form-control"
+                                  id="OrdertreatmentStatus"
+                                >
+                                  <option value="0">未完成</option>
+                                  <option value="1">已完成</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="doctorSelect">醫師名稱 :</label>
+                                <select
+                                  name="doctorName"
+                                  class="form-select form-control"
+                                  id="OrderdoctorSelect"
+                                  required="required"
+                                >
+                                  <option value="郭紹威">郭紹威</option>
+                                  <option value="陳柏惟">陳柏惟</option>
+                                  <option value="徐昀愷">徐昀愷</option>
+                                  <option value="林育詳">林育詳</option>
+                                  <option value="李功堯">李功堯</option>
+                                  <option value="袁佑召">袁佑召</option>
+                                  <option value="李添玟">李添玟</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="quote">報價 :</label>
+                                <input
+                                  id="Orderquote"
+                                  name="quote"
+                                  type="number"
+                                  class="form-control"
+                                  placeholder="請輸入報價"
+                                  required="required"
+                                />
+                              </div>
+
+                              <div class="form-group">
+                                <label for="payStatus">付款狀態 :</label>
+                                <select
+                                  name="payStatus"
+                                  class="form-select form-control"
+                                  id="OrderpayStatus"
+                                >
+                                  <option value="0">未付款</option>
+                                  <option value="1">已付款</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="paymentMethod">付款方式 :</label>
+                                <select
+                                  class="form-select form-control"
+                                  id="OrderpaymentMethod"
+                                  name="paymentMethod"
+                                >
+                                  <option value="">無</option>
+                                  <option value="匯款">匯款</option>
+                                  <option value="信用卡">信用卡</option>
+                                  <option value="現金">現金</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="paymentDate">付款日期 :</label>
+                                <input
+                                  id="OrderpaymentDate"
+                                  name="paymentDate"
+                                  type="date"
+                                  class="form-control"
+                                />
+                              </div>
+
+                              <div class="form-group">
+                                <label for="orderDate">訂單產生日期 :</label>
+                                <input
+                                  id="OrderorderDate"
+                                  name="orderDate"
+                                  type="date"
+                                  class="form-control"
+                                  required
+                                />
+                              </div>
+                              <div
+                                class="card-action"
+                                style="display: flex; justify-content: center"
+                              >
+                                <button
+                                  type="submit"
+                                  id="upConfirmBtn"
+                                  class="btn btn-success"
+                                  style="margin-right: 20px"
+                                >
+                                  新增訂單
+                                </button>
+                                <button
+                                  type="button"
+                                  id="CancelBtn"
+                                  class="btn btn-danger"
+                                >
+                                  取消新增
+                                </button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--MOdal2修改訂單 -->
+                    <div id="upOrderModal" class="modal" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div
+                            class="modal-header"
+                            style="background-color: lightblue"
+                          >
+                            <h5 class="modal-title">修改訂單</h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <form
+                              id="upOrderForm"
+                              action="/clinc/OrderUpdate"
+                              method="post"
+                            >
+                              <div class="form-group">
+                                <label for="orderNumber">訂單編號 :</label>
+                                <input
+                                  id="upOrderNumber"
+                                  name="orderNumber"
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="請輸入訂單編號"
+                                  readonly
+                                />
+                              </div>
+
+                              <div class="form-group">
+                                <label for="patientName">患者名稱 :</label>
+                                <input
+                                  id="upOrderName"
+                                  name="patientName"
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="請輸入患者姓名"
+                                  readonly
+                                />
+                              </div>
+
+                              <div class="form-group">
+                                <label for="patientAge">患者年齡 :</label>
+                                <input
+                                  id="upOrderAge"
+                                  name="patientAge"
+                                  type="number"
+                                  class="form-control"
+                                  min="1"
+                                  max="100"
+                                  placeholder="請輸入患者年齡"
+                                  readonly
+                                />
+                              </div>
+
+                              <div class="form-group">
+                                <label for="patientGender">患者性別 :</label>
+                                <select
+                                  id="upOrderGender"
+                                  class="form-select form-control"
+                                  name="patientGender"
+                                  readonly
+                                >
+                                  <option value="1">男</option>
+                                  <option value="2">女</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="upOrderPhone">患者電話 :</label>
+                                <input
+                                  id="upOrderPhone"
+                                  name="patientPhone"
+                                  type="tel"
+                                  class="form-control"
+                                  maxlength="10"
+                                  placeholder="請輸入患者電話"
+                                />
+                              </div>
+
+                              <div class="form-group">
+                                <label for="patientAddress">患者地址 :</label>
+                                <input
+                                  id="upOrderAddress"
+                                  name="patientAddress"
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="請輸入患者地址"
+                                />
+                              </div>
+
+                              <div class="form-group">
+                                <label for="patientEmail">患者信箱 :</label>
+                                <input
+                                  id="upOrderEmail"
+                                  name="patientEmail"
+                                  type="email"
+                                  class="form-control"
+                                  placeholder="請輸入患者信箱"
+                                />
+                              </div>
+
+                              <div class="form-group">
+                                <label for="treatmentContent">療程內容 :</label>
+                                <select
+                                  name="treatmentItem"
+                                  class="form-select form-control"
+                                  id="upOrdertreatmentContent"
+                                  required="required"
+                                >
+                                  <option>雷射除毛</option>
+                                  <option>玻尿酸</option>
+                                  <option>水飛梭</option>
+                                  <option>音波拉提</option>
+                                  <option>皮秒雷射</option>
+                                  <option>雙眼皮手術</option>
+                                  <option>隆鼻</option>
+                                  <option>抽脂</option>
+                                  <option>隆乳</option>
+                                  <option>痘疤，除斑治療</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="treatmentStatus">療程狀況 :</label>
+                                <select
+                                  name="treatmentStatus"
+                                  class="form-select form-control"
+                                  id="upOrdertreatmentStatus"
+                                >
+                                  <option value="0">未完成</option>
+                                  <option value="1">已完成</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="doctorSelect">醫師名稱 :</label>
+                                <select
+                                  name="doctorName"
+                                  class="form-select form-control"
+                                  id="upOrderdoctorSelect"
+                                  required="required"
+                                >
+                                  <option value="郭紹威">郭紹威</option>
+                                  <option value="陳柏惟">陳柏惟</option>
+                                  <option value="徐昀愷">徐昀愷</option>
+                                  <option value="林育詳">林育詳</option>
+                                  <option value="李功堯">李功堯</option>
+                                  <option value="袁佑召">袁佑召</option>
+                                  <option value="李添玟">李添玟</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="quote">報價 :</label>
+                                <input
+                                  id="upOrderquote"
+                                  name="quote"
+                                  type="number"
+                                  class="form-control"
+                                  placeholder="請輸入報價"
+                                  required="required"
+                                />
+                              </div>
+
+                              <div class="form-group">
+                                <label for="payStatus">付款狀態 :</label>
+                                <select
+                                  name="payStatus"
+                                  class="form-select form-control"
+                                  id="upOrderpayStatus"
+                                >
+                                  <option value="0">未付款</option>
+                                  <option value="1">已付款</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="paymentMethod">付款方式 :</label>
+                                <select
+                                  class="form-select form-control"
+                                  id="upOrderpaymentMethod"
+                                  name="paymentMethod"
+                                >
+                                  <option value="">無</option>
+                                  <option value="匯款">匯款</option>
+                                  <option value="信用卡">信用卡</option>
+                                  <option value="現金">現金</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="paymentDate">付款日期 :</label>
+                                <input
+                                  id="upOrderpaymentDate"
+                                  name="paymentDate"
+                                  type="date"
+                                  class="form-control"
+                                />
+                              </div>
+
+                              <div class="form-group">
+                                <label for="orderDate">訂單產生日期 :</label>
+                                <input
+                                  id="upOrderorderDate"
+                                  name="orderDate"
+                                  type="date"
+                                  class="form-control"
+                                  required
+                                />
+                              </div>
+                              <div
+                                class="card-action"
+                                style="display: flex; justify-content: center"
+                              >
+                                <button
+                                  type="submit"
+                                  id="upConfirmBtn"
+                                  class="btn btn-success"
+                                  style="margin-right: 20px"
+                                >
+                                  修改訂單
+                                </button>
+                                <button
+                                  type="button"
+                                  id="upCancelBtn"
+                                  class="btn btn-danger"
+                                >
+                                  取消修改
+                                </button>
+                              </div>
+                              <!-- <div class="" style="margin: 0 auto;">
+                                <button
+                                  type="submit"
+                                  id="upConfirmBtn"
+                                  class="btn btn-primary"
+                                  style="margin: 0 auto"
+                                >
+                                  修改
+                                </button>
+                                <button
+                                  id="upCancelBtn"
+                                  type="button"
+                                  class="btn btn-danger"
+                                  data-dismiss="modal"
+                                  style="margin: 0 auto;"
+                                >
+                                  取消
+                                </button>
+                              </div> -->
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="table-responsive">
+                      <table
+                        id="basic-datatables"
+                        class="display table table-striped table-hover"
+                      >
+                        <thead>
+                          <tr>
+                            <th>訂單編號</th>
+                            <th>患者</th>
+                            <!-- <th>醫師</th> -->
+                            <th>療程項目</th>
+                            <th>療程進度</th>
+                            <th>付款狀態</th>
+                            <th>訂單產生日期</th>
+                            <th style="width: 14%"></th>
+                            <!-- <th id="upTime">訂單修改時間</th> -->
+                          </tr>
+                        </thead>
+                        <tbody id="orderTbody">
+                          <!--寫ajax  -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--   Core JS Files   -->
+      <!-- <script src="assets/js/core/jquery-3.7.1.min.js"></script>-->
+      <script src="assets/js/core/popper.min.js"></script>
+      <script src="assets/js/core/bootstrap.min.js"></script>
+
+      <!-- jQuery Scrollbar -->
+      <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+      <!-- Chart JS -->
+      <script src="assets/js/plugin/chart.js/chart.min.js"></script>
+
+      <!-- jQuery Sparkline -->
+      <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+      <!-- Chart Circle -->
+      <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+
+      <!-- Datatables -->
+      <script src="assets/js/plugin/datatables/datatables.min.js"></script>
+
+      <!-- Bootstrap Notify -->
+      <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+      <!-- jQuery Vector Maps -->
+      <script src="assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+      <script src="assets/js/plugin/jsvectormap/world.js"></script>
+
+      <!-- Sweet Alert -->
+      <script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+      <!-- Kaiadmin JS -->
+      <script src="assets/js/kaiadmin.min.js"></script>
+
+      <script>
+        // $(function(){
+        $(document).ready(function () {
+          $.ajax({
+            url: "GetAllOrderView",
+            method: "POST",
+            dataType: "json",
+            success: function (data) {
+              let html = "";
+              $.each(data, function (index, order) {
+                html += "<tr>";
+                html += "<td>" + order.orderNumber + "</td>";
+                html += "<td>" + order.patientName + "</td>";
+                html += "<td>" + order.treatmentItem + "</td>";
+                html +=
+                  "<td>" +
+                  (order.threapyStatus === 1 ? "已完成" : "未完成") +
+                  "</td>";
+                html +=
+                  "<td>" +
+                  (order.payStatus === 1 ? "已付款" : "未付款") +
+                  "</td>";
+                html += "<td>" + DisplayDate(order.orderDate) + "</td>";
+                // 這邊在修改btn給他偷塞data
+                html +=
+                  "<td>" +
+                  '<div class="form-button-action" style="margin-left: 0;margin-right: 0;">' +
+                  '<button type="button" data-upodnumber="' +
+                  order.orderNumber +
+                  '" data-upodname="' +
+                  order.patientName +
+                  '" data-upodpaystatus="' +
+                  order.payStatus +
+                  '" data-upoddate="' +
+                  order.orderDate +
+                  '" data-upodthstatus="' +
+                  order.threapyStatus +
+                  '" data-upodthitem="' +
+                  order.treatmentItem +
+                  '" data-upodptage="' +
+                  order.pateintAge +
+                  '" data-upodptgender="' +
+                  order.patientGender +
+                  '" data-upodptphone="' +
+                  order.patientPhone +
+                  '" data-upodnptaddress="' +
+                  order.patientAddress +
+                  '" data-upodptemail="' +
+                  order.patientEmail +
+                  '" data-upoddoctor="' +
+                  order.doctorName +
+                  '" data-upodpaytool="' +
+                  order.payTool +
+                  '" data-upodpaydate="' +
+                  order.payDate +
+                  '" data-upodquote="' +
+                  order.quote +
+                  '"  data-bs-toggle="tooltip" title="Edit Task" class="btn btn-update btn-link btn-primary btn-lg" data-original-title="Edit Task">' +
+                  '<i class="fa-solid fa-file-pen"></i>修改訂單' +
+                  "</button>" +
+                  //刪除按鈕
+                  '<button  type="button" data-odnumber="' +
+                  order.orderNumber +
+                  '" data-bs-toggle="tooltip" title="Remove" class="btn btn-delete btn-link btn-danger" data-original-title="Remove">' +
+                  '<i class="fa-solid fa-trash"></i>刪除訂單' +
+                  "</button>" +
+                  "</div>" +
+                  "</td>";
+                //修改時間
+                html += "<td></td>";
+                html += "</tr>";
+              });
+              $("#orderTbody").html(html);
+            },
+          });
+
+          //更新日期的顯示方式
+          //傳進來是String => 8月20,2024 11月15,2024
+          //yyyy-mm-dd
+          function DisplayDate(date) {
+            let [month_day, year] = date.split(",");
+            let [month, day] = month_day.split(" ");
+            //多一個空格
+            let Year = year.trim();
+            let Month = parseInt(month.slice(0, -1));
+            let Day = parseInt(day);
+            if (Month < 10) {
+              Month = "0" + Month;
+            } else {
+              //Int給他轉String
+              Month = "" + Month;
+            }
+            if (Day < 10) {
+              Day = "0" + day;
+            } else {
+              //Int給他轉String
+              Day = "" + day;
+            }
+            // let Year = d.substr(7).trim();
+            // let month = parseInt(d.substr(0, 1));
+            // let month = parseInt(d.slice(-3));
+            // let mm = month <= 10 ? "0" + month : String(month);
+            // let day = ("0" + d.getDate()).slice(-2);
+            // let yyyymmdd = d.toLocaleString("sv");
+            // return yyyymmdd;
+            //return Day;
+            return Year + "-" + Month + "-" + Day;
+          }
+          //刪除訂單
+          $("#orderTbody").on("click", ".btn-delete", function () {
+            let orderNumber = $(this).data("odnumber");
+            //檢查有沒有取到值
+            //window.alert(orderNumber);
+            if (confirm("確定要刪除嗎？")) {
+              //給隱藏的input值
+              $("#deleteInput").val(orderNumber);
+              $("#deleteForm").submit();
+            } else {
+              window.alert("取消刪除");
+            }
+          });
+
+          //新增訂單按鈕
+          $("#container").on("click", "#addBtn", function () {
+            // window.location.href = "OrderAdd.html";
+            $("#addOrderModal").modal("show");
+
+            //自動OD單號+1
+            //把刪除按鈕偷塞的data尻過來用
+            //取最後一個刪除按鈕的orderNumber
+            let LastOrderNumber = $(".btn-delete").last();
+            let LastOrderNumberData = LastOrderNumber.data("odnumber");
+            //console.log(LastOrderNumberData);
+            let LastOrderNumberDataN = parseInt(LastOrderNumberData.substr(2));
+            //100以前的單號前面要加一個0
+            let LOND;
+            if (LastOrderNumberDataN < 100) {
+              LOND = "OD0" + String(LastOrderNumberDataN + 1);
+            } else {
+              LOND = "OD" + String(LastOrderNumberDataN + 1);
+            }
+
+            // let OrderpaymentDate = $("#OrderpaymentDate").val();
+            // if (OrderpaymentDate == "") {
+            //   $("#OrderpaymentDate").val("0001-01-01");
+            // }
+
+            $("#OrderNumber").val(LOND);
+            //可能會跳重複綁定事件的錯誤
+            $("#OrderForm").off("submit");
+            //提交表單
+            $("#OrderForm").on("submit", function (e) {
+              e.preventDefault();
+
+              if (confirm("確定要新增嗎？")) {
+                alert("新增成功");
+                this.submit();
+              } else {
+                alert("取消新增");
+              }
+            });
+          });
+
+          //點擊取消modal消失
+          $("#CancelBtn").on("click", function () {
+            $("#addOrderModal").modal("hide");
+          });
+
+          //修改訂單
+          $("#orderTbody").on("click", ".btn-update", function () {
+            // 吐了
+            let uporderNumber = $(this).data("upodnumber");
+            let uporderName = $(this).data("upodname");
+            let uporderPayStatus = $(this).data("upodpaystatus");
+            let uporderThreapyStatus = $(this).data("upodthstatus");
+            let uporderTreatmentItem = $(this).data("upodthitem");
+            let uporderAge = $(this).data("upodptage");
+            let uporderGender = $(this).data("upodptgender");
+            let uporderPhone = $(this).data("upodptphone");
+            let uporderAddress = $(this).data("upodnptaddress");
+            let uporderEmil = $(this).data("upodptemail");
+            let uporderDoctor = $(this).data("upoddoctor");
+            let uporderPayTool = $(this).data("upodpaytool");
+            let uporderQuote = $(this).data("upodquote");
+            let uporderDate = $(this).data("upoddate");
+            let uporderPayDate = $(this).data("upodpaydate");
+            //日期都要先轉過
+            let uporderDateF = DisplayDate(uporderDate);
+            // console.log(uporderPayDate);
+            let uporderPayDateF = DisplayDate(uporderPayDate);
+            //給預設值
+            $("#upOrderModal").modal("show");
+            $("#upOrderNumber").val(uporderNumber);
+            $("#upOrderName").val(uporderName);
+            $("#upOrderAge").val(uporderAge);
+            $("#upOrderGender").val(uporderGender);
+            $("#upOrderPhone").val(uporderPhone);
+            $("#upOrderAddress").val(uporderAddress);
+            $("#upOrderEmail").val(uporderEmil);
+            $("#upOrdertreatmentContent").val(uporderTreatmentItem);
+            $("#upOrdertreatmentStatus").val(uporderThreapyStatus);
+            $("#upOrderdoctorSelect").val(uporderDoctor);
+            $("#upOrderquote").val(uporderQuote);
+            $("#upOrderpayStatus").val(uporderPayStatus);
+            $("#upOrderpaymentMethod").val(uporderPayTool);
+            //日期
+            $("#upOrderpaymentDate").val(uporderPayDateF);
+            $("#upOrderorderDate").val(uporderDateF);
+            //取消重複綁定
+            $("#upOrderForm").off("submit");
+            //提交修改表單
+            // 然後綁定新的 submit 事件處理程序
+            $("#upOrderForm").on("submit", function (e) {
+              e.preventDefault();
+
+              if (confirm("確定要修改嗎？")) {
+                alert("修改成功");
+                this.submit();
+              } else {
+                alert("取消修改");
+              }
+            });
+
+            //點擊取消modal消失
+            $("#upCancelBtn").on("click", function () {
+              $("#upOrderModal").modal("hide");
+            });
+          });
+        });
+      </script>
+      <!--jquery的filter-->
+      <script>
+        $(document).ready(function () {
+          $("#Serach").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#orderTbody tr").filter(function () {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+            });
+          });
+        });
+      </script>
+      <!-- 隱藏功能 -->
+      <script>
+        $(document).ready(function () {
+          $("#AASerach").on("input", function () {
+            // 獲取 input 的值
+            let inputValue = $(this).val();
+
+            // 檢查是否包含 'ens'
+            if (inputValue.includes("end") || inputValue.includes("END")) {
+              // 跳轉到指定的 URL
+              window.location.href = "END.html";
+            }
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>
