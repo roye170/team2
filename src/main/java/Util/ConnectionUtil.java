@@ -15,7 +15,7 @@ public class ConnectionUtil {
 	static {
         try {
         	context = new InitialContext();
-        	dataSource = (DataSource)context.lookup("java:/comp/env/jdbc/clinc");
+        	dataSource = (DataSource)context.lookup("java:/comp/env/jdbc/clinic");
         } catch (Exception e){
         	
         }

@@ -35,7 +35,7 @@ public class empJNDI extends HttpServlet {
 
 	    try {
 	        Context context = new InitialContext();
-	        DataSource ds = (DataSource) context.lookup("java:/comp/env/jdbc/clinc");
+	        DataSource ds = (DataSource) context.lookup("java:/comp/env/jdbc/clinic");
 	        conn = ds.getConnection();
 
 	        String sql = ("SELECT * FROM emp");
